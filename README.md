@@ -1,6 +1,6 @@
-# Gatsby Sanity Cloud PaaS
+# Gatsby React Cloud PaaS
 
-<h3 style="font-size: 5em;">☃️❄️⚙️📶🌐</h3>
+<h3 style="font-size: 5em;">☃️❄️⚙️⚛📶🌐</h3>
 
 ## **Cloud Native Platform as a Service application built on Gatsby**
 
