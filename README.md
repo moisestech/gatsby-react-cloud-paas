@@ -1,2 +1,72 @@
-# gatsby-sanity-cloud-paas
-Gatsby Sanity Cloud PaaS
+# Gatsby Sanity Cloud PaaS
+
+<img src="" width="150px"/>
+
+<h3 style="font-size: 5em;">☃️❄️⚙️📶🌐</h3>
+
+## **Cloud Native Platform as a Service application built on Gatsby**
+
+---
+
+## ⚙ Features
+
+- React 16.13
+- Gatsby 2.24
+- React Hooks
+- ES8
+- PropTypes
+- Light/Dark Theme
+
+## 👁️‍🗨️ Project Preview
+
+|    Light Mode     |     Dark Mode     |
+| :---------------: | :---------------: |
+| ![]() ![]() ![]() | ![]() ![]() ![]() |
+
+## 🗺 URL Tree
+
+```bash
+├── /                          #Home
+├── /:dashboard                #Dashboard
+├── /:instances/:instanceID    #Instance:ID
+├── /create                    #Create Instance
+└── /*                         #404
+```
+
+## 🌿 Application Tree
+
+```bash
+├── README.md
+├── gatsby
+    ├── gatsby-config.js
+    ├── package-lock.json
+    ├── package.json
+    ├── src
+    │   ├── assets
+    │   │   ├── fonts
+    │   │   │   └── replica-regular.woff
+    │   │   └── images
+    │   ├── components
+    │   ├── pages
+    │   ├── styles
+    │   ├── templates
+    │   └── utils
+    └── static
+```
+
+## ⛰️ Roadmap
+
+## 📝 Todos
+
+- Create Home Page.
+- Create Login Page.
+- Create Dashboard Page.
+- Create Instance:InstanceID Page.
+- Create Create Page.
+- Create 404 Page.
+- Create a Dark Mode / Light Mode Theme.
+
+- Add Favicon / SVG.
+- Mobile version.
+- Re-write in Typescript.
+- Re-factor in styled components.
