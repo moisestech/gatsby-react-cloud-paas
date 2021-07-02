@@ -1,7 +1,5 @@
 # Gatsby Sanity Cloud PaaS
 
-<img src="" width="150px"/>
-
 <h3 style="font-size: 5em;">☃️❄️⚙️📶🌐</h3>
 
 ## **Cloud Native Platform as a Service application built on Gatsby**
@@ -19,9 +17,9 @@
 
 ## 👁️‍🗨️ Project Preview
 
-|    Light Mode     |     Dark Mode     |
-| :---------------: | :---------------: |
-| ![]() ![]() ![]() | ![]() ![]() ![]() |
+|                                                                                                                                                               Light Mode                                                                                                                                                               |     Dark Mode     |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
+| ![](https://raw.githubusercontent.com/moisestech/gatsby-sanity-cloud-paas/main/gatsby/static/ui/nevalyashka_cloud_provider_ui_dashboard_desktop_June28_2021.png) ![](https://raw.githubusercontent.com/moisestech/gatsby-sanity-cloud-paas/main/gatsby/static/ui/nevalyashka_cloud_provider_ui_dashboard_mobile_June28_2021.png) ![]() | ![]() ![]() ![]() |
 
 ## 🗺 URL Tree
 
