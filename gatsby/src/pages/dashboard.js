@@ -1,10 +1,22 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import styled from 'styled-components';
+
+import InstanceList from '../components/InstanceList';
+import TopNav from '../components/TopNav';
+
+const DashBoardPageStyles = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  background: cyan;
+`;
 
 export default function DashBoardPage() {
   return (
-    <>
-      <p>Hey! - This is the Dashboard!!!</p>
-    </>
+    <DashBoardPageStyles>
+      <TopNav />
+      <InstanceList />
+    </DashBoardPageStyles>
   );
 }
