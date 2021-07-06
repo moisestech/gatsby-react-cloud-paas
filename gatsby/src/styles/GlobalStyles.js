@@ -1,17 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
-import bg from '../assets/images/bg.svg';
+// import bg from '../assets/images/bg.svg';
 import stripes from '../assets/images/stripes.svg';
+// html // background-image: url(${bg});
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --red: #FF4949;
+    --blue: blue;
+    --pastelblue: #8ECDEA;
     --black: #2E2E2E;
     --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
   }
   html {
-    background-image: url(${bg});
     background-size: 450px;
     background-attachment: fixed;
     font-size: 10px;
@@ -27,19 +28,25 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    background: var(--red);
-    color: white;
-    border: 0;
-    padding: 0.6rem 1rem;
-    border-radius: 2px;
+    font-size: 13px;
+    line-height: 22px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4px 15px;
+    font-weight: 600;
+    white-space: nowrap;
     cursor: pointer;
-    --cast: 2px;
-    box-shadow: var(--cast) var(--cast) 0 var(--grey);
-    text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
-    transition: all 0.2s;
-    &:hover {
-      --cast: 4px;
-    }
+    text-decoration: none;
+    box-sizing: border-box;
+    background-clip: border-box !important;
+    background-origin: border-box !important;
+    color: var(--blue);
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid var(--blue);
   }
 
   .gatsby-image-wrapper img[src*=base64\\,] {
