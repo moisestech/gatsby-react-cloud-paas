@@ -7,8 +7,10 @@ const LogoStyles = styled.div`
   flex: 1;
   a {
     display: flex;
+    flex: 1;
     flex-direction: row;
     align-items: center;
+    padding: 0 !important;
   }
   h2 {
     font-size: 1.5rem;
