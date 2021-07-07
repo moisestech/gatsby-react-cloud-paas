@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Instance from './Instance';
 
 const InstanceListStyles = styled.ul`
+  width: 100vw;
   padding: 0;
   z-index: 5;
 `;
