@@ -9,10 +9,7 @@ const InstanceListStyles = styled.ul`
 `;
 
 export default function InstanceList() {
-  // const myFunc = (num) => Number(num);
-  // const instancesArr = Array.from(String(10), myFunc);
-
-  const instancesArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  const instancesArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
   return (
     <InstanceListStyles>
