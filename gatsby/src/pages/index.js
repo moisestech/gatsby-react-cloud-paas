@@ -11,8 +11,11 @@ const HomePageStyles = styled.div`
   margin-top: 75px;
   z-index: 10;
   p {
-    max-width: 400px;
+    max-width: 450px;
     font-size: 3rem;
+  }
+  h2 {
+    color: blue;
   }
 `;
 
@@ -20,8 +23,9 @@ export default function HomePage() {
   return (
     <HomePageStyles>
       <p>
-        Nevalyashka is a platform as a service (PaaS) that enables developers to
-        build, run, and operate applications entirely in the cloud.
+        <h2>Nevalyashka</h2> is a platform as a service (PaaS) that enables
+        developers to build, run, and operate applications entirely in the
+        cloud.
       </p>
     </HomePageStyles>
   );
