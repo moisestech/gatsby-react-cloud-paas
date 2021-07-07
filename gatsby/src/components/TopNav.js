@@ -10,7 +10,7 @@ const TopNavStyles = styled.nav`
   margin-left: 0;
   margin-right: 0;
   padding: 12px 20px 10px;
-  min-height: 63px;
+  max-height: 63px;
   margin-top: 2px;
   border-bottom: 1px solid #e7ebf3;
   align-items: center;
@@ -24,6 +24,7 @@ const TopNavStyles = styled.nav`
   }
   div.account {
     display: flex;
+    align-items: center;
     flex: 1;
     font-size: 1.7rem;
   }

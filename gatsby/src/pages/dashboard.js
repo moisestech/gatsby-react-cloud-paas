@@ -8,8 +8,8 @@ const DashBoardPageStyles = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  height: 100%;
-  background: cyan;
+  margin-top: 75px;
+  z-index: 10;
 `;
 
 export default function DashBoardPage() {

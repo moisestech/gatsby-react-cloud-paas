@@ -11,6 +11,10 @@ const NavStyles = styled.nav`
   padding: 0 15px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
   border-top: 1px solid #eef1f6;
+  width: 100%;
+  top: 0;
+  z-index: 15;
+  position: fixed;
   ul {
     margin: 0;
     padding: 0;
@@ -33,7 +37,6 @@ const NavStyles = styled.nav`
     background: linear-gradient(to right, blue, #8ECDEA);
     content: '';
     width: 100%;
-    top: 75px;
     position: absolute;
     height: 3px;
     left: 0;
