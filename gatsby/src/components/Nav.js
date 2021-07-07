@@ -1,50 +1,76 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import udacity from '../assets/images/udacity.svg';
 
 import Logo from './Logo';
 
 const NavStyles = styled.nav`
-  background: white;
-  height: 50px;
-  margin: 25px 0 0 0;
+  position: fixed;
+  top: 0;
   padding: 0 15px;
+  height: 77px;
+  width: calc(100vw - 27px);
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
   border-top: 1px solid #eef1f6;
-  width: 100%;
-  top: 0;
+  background: white;
   z-index: 15;
-  position: fixed;
+  &::after {
+    background: linear-gradient(to right, blue, #8ecdea);
+    content: '';
+    width: 100vw;
+    position: absolute;
+    height: 3px;
+    top: 75px;
+    left: 0;
+  }
   ul {
     margin: 0;
     padding: 0;
     text-align: center;
     list-style: none;
     display: flex;
+    flex: 1;
     align-items: center;
-    justify-content: center;
-    height: 100%;
+    justify-content: flex-end;
+  }
+  li {
+    position: relative;
   }
   a {
     font-size: 1.4rem;
     text-decoration: none;
-    padding: 5px;
-    &: hover {
+    padding: 4px;
+    &:hover {
       color: var(--blue);
     }
   }
-  ::after {
-    background: linear-gradient(to right, blue, #8ECDEA);
-    content: '';
+  .organization {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 25px;
     width: 100%;
-    position: absolute;
-    height: 3px;
-    left: 0;
+    font-size: 1.2rem;
+    color: gray;
+    background: white;
+    & img {
+      width: 15px;
+      margin-right: 7px;
+    }
+  }
 `;
 
 export default function Nav() {
   return (
     <NavStyles>
+      <div className="organization">
+        <img alt="scholarship-logo" src={udacity} />
+        <span>Udacity · SUSE Cloud-Native Foundation Scholarship</span>
+      </div>
       <ul>
         <Logo />
         <li>
