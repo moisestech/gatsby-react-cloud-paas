@@ -2,13 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
   position: relative;
-  background: white;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  max-height: 47px;
+  padding: 0 15px;
   font-size: 1.2rem;
-  background: salmon;
+  border-top: 1px solid #eef1f6;
+  background: white;
   div {
     display: flex;
     flex: 1;
@@ -16,13 +18,17 @@ const FooterStyles = styled.footer`
       justify-content: flex-end;
     }
   }
+  p {
+    padding: 0 15px 0 0;
+    color: var(--gray);
+  }
 `;
 
 export default function Footer() {
   return (
     <FooterStyles>
       <div>
-        <p>Nevalyashka.com</p>
+        <p>Nevalyashka.cloud</p>
         <p>Documentation</p>
         <p>Blog</p>
       </div>
