@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-cloud-paas",
+  "name": "gatsby-react-cloud-paas",
   "private": true,
-  "description": "Gatsby Cloud PaaS",
+  "description": "Gatsby React Cloud PaaS",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
