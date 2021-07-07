@@ -17,6 +17,15 @@ const NavStyles = styled.nav`
   border-top: 1px solid #eef1f6;
   background: white;
   z-index: 15;
+  &::before {
+    background: var(--bordergray);
+    content: '';
+    width: 100vw;
+    position: absolute;
+    height: 1px;
+    top: 25px;
+    left: 0;
+  }
   &::after {
     background: linear-gradient(to right, blue, #8ecdea);
     content: '';
@@ -42,7 +51,7 @@ const NavStyles = styled.nav`
   a {
     font-size: 1.4rem;
     text-decoration: none;
-    padding: 4px;
+    padding: 7px;
     &:hover {
       color: var(--blue);
     }
@@ -55,7 +64,7 @@ const NavStyles = styled.nav`
     height: 25px;
     width: 100%;
     font-size: 1.2rem;
-    color: gray;
+    color: var(--gray);
     background: white;
     & img {
       width: 15px;
@@ -83,10 +92,7 @@ export default function Nav() {
           <Link to="/billing">Billing</Link>
         </li>
         <li>
-          <Link to="/profile">Profile</Link>
-        </li>
-        <li>
-          <Link to="/logout">Logout</Link>
+          <Link to="/">Logout</Link>
         </li>
       </ul>
     </NavStyles>
