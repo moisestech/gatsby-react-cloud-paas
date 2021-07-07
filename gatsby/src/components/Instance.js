@@ -10,7 +10,7 @@ const InstanceStyles = styled.li`
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  border-bottom: 1px solid #eef1f6;
+  border-bottom: 1px solid --var(bordergray);
   &:hover {
     background-color: #fbfbfd;
   }
@@ -62,7 +62,7 @@ export default function Instance({ index }) {
   return (
     <InstanceStyles>
       <div>
-        <Link to="/dashboard">
+        <Link to="/instance">
           <span>⚙️</span>
           <div>{`instance-${index}`}</div>
         </Link>
