@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 // import bg from '../assets/images/bg.svg';
-import stripes from '../assets/images/stripes.svg';
+// import stripes from '../assets/images/stripes.svg';
 // html // background-image: url(${bg});
 
 const GlobalStyles = createGlobalStyle`
@@ -77,7 +77,6 @@ const GlobalStyles = createGlobalStyle`
   hr {
     border: 0;
     height: 8px;
-    background-image: url(${stripes});
     background-size: 1500px;
   }
 
