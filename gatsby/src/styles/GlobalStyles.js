@@ -11,6 +11,8 @@ const GlobalStyles = createGlobalStyle`
     --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
+    --gray: #62738d;
+    --bordergray: #eef1f6;
   }
   html {
     background-size: 450px;
