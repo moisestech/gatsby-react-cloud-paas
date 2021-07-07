@@ -7,11 +7,9 @@ const TopNavStyles = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 2px 0 0 0;
   padding: 12px 20px 10px;
   max-height: 63px;
-  margin-top: 2px;
   border-bottom: 1px solid #e7ebf3;
   align-items: center;
   background: #f7f8fb;
