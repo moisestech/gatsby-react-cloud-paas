@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
+import { FiHexagon } from 'react-icons/fi';
+
 const InstanceStyles = styled.li`
   padding: 10px 0;
   max-height: 53px;
@@ -63,7 +65,9 @@ export default function Instance({ index }) {
     <InstanceStyles>
       <div>
         <Link to="/instance">
-          <span>⚙️</span>
+          <span>
+            <FiHexagon color="blue" size={25} />
+          </span>
           <div>{`instance-${index}`}</div>
         </Link>
         <Link className="instance-settings" to="/instance/settings">
