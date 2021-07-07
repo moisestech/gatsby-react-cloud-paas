@@ -3,12 +3,12 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const InstanceStyles = styled.li`
-  padding: 20px 0;
+  padding: 10px 0;
+  max-height: 53px;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
   margin: 0;
   border-bottom: 1px solid #eef1f6;
   &:hover {
