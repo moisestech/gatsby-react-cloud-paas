@@ -1,6 +1,11 @@
-// This file is empty, but some people were reporting that it would not start unless they had an empty file. So here it is! You can delete the comment.
-module.exports = {
-  flags: {
-    DEV_SSR: true,
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env' });
+
+export default {
+  siteMetadata: {
+    title: `Nevalyashka Cloud`,
+    description: 'Platform as a Service',
   },
+  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-styled-components'],
 };
