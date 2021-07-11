@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22d9a6f7-5338-40fb-a84d-542f6b7d2793/deploy-status)](https://app.netlify.com/sites/gatsby-react-cloud-paas/deploys)
+
 # Gatsby React Cloud PaaS
 
 <h3 style="font-size: 5em;">☃️❄️⚙️⚛📶🌐</h3>
@@ -8,8 +10,11 @@
 
 ## ⚙ Features
 
+![]()
+
 - React 16.13
 - Gatsby 2.24
+- [Firebase Auth](https://github.com/marcomelilli/gatsby-firebase-simple-auth)
 - React Hooks
 - ES8
 - PropTypes
