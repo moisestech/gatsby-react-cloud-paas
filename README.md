@@ -17,9 +17,15 @@
 
 ## 👁️‍🗨️ Project Preview
 
-|                                                                                                                                                                                      Light Mode                                                                                                                                                                                       |     Dark Mode     |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
-| ![](https://raw.githubusercontent.com/moisestech/gatsby-sanity-cloud-paas/main/gatsby/static/ui/nevalyashka_cloud_provider_ui_dashboard_desktop_June28_2021.png) <img src="https://raw.githubusercontent.com/moisestech/gatsby-sanity-cloud-paas/main/gatsby/static/ui/nevalyashka_cloud_provider_ui_dashboard_mobile_June28_2021.png" width="500px" style="max-width: 500px"/> ![]() | ![]() ![]() ![]() |
+## Ui
+
+|                                                                                                                                                                                        Light Mode                                                                                                                                                                                         |     Dark Mode     |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
+| ![](https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/ui/nevalyashka_cloud_provider_ui_dashboard_desktop_June28_2021.png) <img src="https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/ui/nevalyashka_cloud_provider_ui_dashboard_mobile_June28_2021.png" width="500px" style="max-width: 500px"/> ![]() | ![]() ![]() ![]() |
+
+## Diagram
+
+![](https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/diagram/gatsby-basic-auth.png)
 
 ## 🗺 URL Tree
 
