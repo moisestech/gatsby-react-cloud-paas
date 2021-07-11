@@ -19,11 +19,11 @@
 
 ## Ui
 
-|                                                                                                                                                                                        Light Mode                                                                                                                                                                                         |     Dark Mode     |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
-| ![](https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/ui/nevalyashka_cloud_provider_ui_dashboard_desktop_June28_2021.png) <img src="https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/ui/nevalyashka_cloud_provider_ui_dashboard_mobile_June28_2021.png" width="500px" style="max-width: 500px"/> ![]() | ![]() ![]() ![]() |
+|                                                                          🖥️ Desktop Mode                                                                           |                                                                                                  📱 Mobile Mode                                                                                                  |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![](https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/ui/nevalyashka_cloud_provider_ui_dashboard_desktop_June28_2021.png) | <img src="https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/ui/nevalyashka_cloud_provider_ui_dashboard_mobile_June28_2021.png" width="500px" style="max-width: 300px"/> |
 
-## Diagram
+## Architecture
 
 ![](https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/diagram/gatsby-basic-auth.png)
 
@@ -85,17 +85,36 @@
 
 ## ⛰️ Roadmap
 
+- Re-write in Typescript
+
+---
+
 ## 📝 Todos
 
-- Create Home Page.
-- Create Login Page.
-- Create Dashboard Page.
-- Create Instance:InstanceID Page.
-- Create Create Page.
-- Create 404 Page.
-- Create a Dark Mode / Light Mode Theme.
+### Login
 
+- Create Gatsby Auth Login Page.
+- Setup Firebase Login.
+
+### App State Management
+
+- Import ReduxJS.
+- Setup Instances Redux Action Creators.
+- Setup Loading Bar.
+
+### Dashboard (Instances)
+
+- Create Dashboard Page Pagination.
+- Create Create Instance Page.
+- Create Instance:InstanceID Page.
+
+### Homepage
+
+- Create Home Page Welcome Design.
+
+### Design
+
+- Create a Dark Mode / Light Mode Theme.
 - Add Favicon / SVG.
 - Mobile version.
-- Re-write in Typescript.
-- Re-factor in styled components.
+- Create 404 Page.
