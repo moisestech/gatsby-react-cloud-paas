@@ -10,7 +10,7 @@
 
 ## ⚙ Features
 
-![]()
+![](https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/diagram/gatsby-firebase-logo.png)
 
 - React 16.13
 - Gatsby 2.24
