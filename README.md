@@ -45,8 +45,8 @@
     │   ├── diagram
     │   │   └── gatsby-basic-auth.png
     │   └── ui
-    │       ├── nevalyashka_cloud_provider_ui_dashboard_desktop_June28_2021.png
-    │       └── nevalyashka_cloud_provider_ui_dashboard_mobile_June28_2021.png
+    │       ├── dashboard_desktop.png
+    │       └── dashboard_mobile.png
     └── src
         ├── assets
         │   ├── fonts
