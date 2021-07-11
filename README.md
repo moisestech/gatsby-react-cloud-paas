@@ -36,20 +36,45 @@
 ```bash
 ├── README.md
 ├── gatsby
+    ├── gatsby-browser.js
     ├── gatsby-config.js
-    ├── package-lock.json
+    ├── gatsby-ssr.js
+    ├── netlify.toml
     ├── package.json
-    ├── src
-    │   ├── assets
-    │   │   ├── fonts
-    │   │   │   └── replica-regular.woff
-    │   │   └── images
-    │   ├── components
-    │   ├── pages
-    │   ├── styles
-    │   ├── templates
-    │   └── utils
-    └── static
+    ├── reference
+    │   ├── diagram
+    │   │   └── gatsby-basic-auth.png
+    │   └── ui
+    │       ├── nevalyashka_cloud_provider_ui_dashboard_desktop_June28_2021.png
+    │       └── nevalyashka_cloud_provider_ui_dashboard_mobile_June28_2021.png
+    └── src
+        ├── assets
+        │   ├── fonts
+        │   │   └── replica-regular.woff
+        │   └── images
+        │       └── udacity.svg
+        ├── components
+        │   ├── Footer.js
+        │   ├── Instance.js
+        │   ├── InstanceList.js
+        │   ├── Layout.js
+        │   ├── Logo.js
+        │   ├── Nav.js
+        │   └── TopNav.js
+        ├── pages
+        │   ├── 404.js
+        │   ├── about.js
+        │   ├── account.js
+        │   ├── billing.js
+        │   ├── dashboard.js
+        │   └── index.js
+        ├── services
+        │   └── auth.js
+        ├── styles
+        │   ├── GlobalStyles.js
+        │   └── Typography.js
+        ├── templates
+        └── utils
 ```
 
 ## ⛰️ Roadmap
