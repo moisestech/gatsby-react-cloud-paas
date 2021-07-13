@@ -1,21 +1,13 @@
 import React from 'react';
-import { Link, navigate } from 'gatsby';
-import { Router } from '@reach/router';
+import { Link } from 'gatsby';
 
 import styled from 'styled-components';
 
-// PAGES
-import DashboardPage from '../pages/dashboard';
-import AccountPage from '../pages/account';
-import BillingPage from '../pages/billing';
-
 // COMPONENTS
 import Status from './Status';
-import PrivateRoute from './PrivateRoute';
-import Login from './Login';
 
 // UTILS
-import { setUser, isLoggedIn } from '../utils/auth';
+import { isLoggedIn } from '../utils/auth';
 
 // DESIGN
 import udacity from '../assets/images/udacity.svg';
