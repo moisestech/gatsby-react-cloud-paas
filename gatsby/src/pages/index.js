@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+
+// ICONS
+import { FiHexagon } from 'react-icons/fi';
+
+// AUTH
 import { isLoggedIn } from '../utils/auth';
 
 const HomePageStyles = styled.div`
@@ -34,7 +39,12 @@ export default function HomePage() {
         {isLoggedIn() ? (
           <p>
             You are logged in, so check your{' '}
-            <Link to="/app/account">account</Link>
+            <Link to="/app/dashboard">
+              Dashboard{' '}
+              <span>
+                <FiHexagon color="blue" size={25} />
+              </span>
+            </Link>
           </p>
         ) : (
           <p>
