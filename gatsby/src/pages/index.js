@@ -32,14 +32,14 @@ export default function HomePage() {
 
       <div>
         {isLoggedIn() ? (
-          <>
+          <p>
             You are logged in, so check your{' '}
-            <Link to="/app/profile">profile</Link>
-          </>
+            <Link to="/app/account">account</Link>
+          </p>
         ) : (
-          <>
+          <p>
             <Link to="/app/login">Log in</Link> to use our cloud services
-          </>
+          </p>
         )}
       </div>
     </HomePageStyles>
