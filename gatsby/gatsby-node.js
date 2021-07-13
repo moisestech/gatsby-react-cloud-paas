@@ -2,10 +2,14 @@
  * Implement Gatsby's Node APIs in this file.
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
+ *
+ * Might need to install
+ * https://www.gatsbyjs.com/plugins/gatsby-plugin-create-client-paths
+ *
+ * Further Reading
+ * https://www.gatsbyjs.com/tutorial/authentication-tutorial/#creating-client-only-routes
+ *
  */
-
-// https://www.gatsbyjs.com/plugins/gatsby-plugin-create-client-paths
-// Might need to install
 
 // Implement the Gatsby API “onCreatePage”. This is
 // called after every page is created.
