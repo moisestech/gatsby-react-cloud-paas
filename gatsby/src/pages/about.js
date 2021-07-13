@@ -20,6 +20,14 @@ export default function AccountPage() {
   return (
     <AboutPageStyles>
       <p>About Page 👤</p>
+      <p>
+        Nevalyashka is a platform as a service (PaaS) that enables developers to
+        build, run, and operate applications entirely in the cloud.
+      </p>
+      <p>
+        Contributors: Andrei Li, Saurabh Saha, Moises Sanabria, Ankush Singh,
+        Enas Samir, Gagan Kalra, Khaled Ben Yahya
+      </p>
     </AboutPageStyles>
   );
 }
