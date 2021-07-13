@@ -6,6 +6,8 @@ import styled from 'styled-components';
 
 // PAGES
 import DashBoardPage from '../pages/dashboard';
+import AccountPage from '../pages/account';
+import BillingPage from '../pages/billing';
 
 // COMPONENTS
 import Status from './Status';
@@ -91,13 +93,13 @@ function MainNav() {
   return (
     <>
       <li>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/app/dashboard">Dashboard</Link>
       </li>
       <li>
-        <Link to="/account">Account</Link>
+        <Link to="/app/account">Account</Link>
       </li>
       <li>
-        <Link to="/billing">Billing</Link>
+        <Link to="/app/billing">Billing</Link>
       </li>
     </>
   );
@@ -113,24 +115,17 @@ export default function Nav() {
 
       <ul>
         <Logo />
-        <Status />
         <Router>
           <PrivateRoute path="/app/profile" component={DashBoardPage} />
+          <PrivateRoute path="/app/profile" component={AccountPage} />
+          <PrivateRoute path="/app/profile" component={BillingPage} />
           <Login path="/app/login" />
         </Router>
 
         {isLoggedIn() ? (
           <>
-            <Link
-              href="/"
-              onClick={(event) => {
-                event.preventDefault();
-                logout(() => navigate(`/app/login`));
-              }}
-            >
-              Logout
-            </Link>
             <MainNav />
+            <Status />
           </>
         ) : null}
       </ul>
