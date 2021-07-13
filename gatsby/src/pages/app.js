@@ -13,7 +13,7 @@ import BillingPage from './billing';
 
 // COMPONENTS
 import PrivateRoute from '../components/PrivateRoute';
-import LoginPage from './Login';
+import LoginPage from './login';
 
 const AppStyles = styled.div`
   display: flex;
