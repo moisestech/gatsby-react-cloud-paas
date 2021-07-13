@@ -12,10 +12,10 @@
 
 ![](https://raw.githubusercontent.com/moisestech/gatsby-react-cloud-paas/main/gatsby/reference/diagram/gatsby-firebase-logo.png)
 
-- React 16.13
 - Gatsby 2.24
-- [Firebase Auth](https://github.com/marcomelilli/gatsby-firebase-simple-auth)
+- React 16.13
 - React Hooks
+- [Firebase Auth](https://github.com/marcomelilli/gatsby-firebase-simple-auth)
 - ES8
 - PropTypes
 - Light/Dark Theme
