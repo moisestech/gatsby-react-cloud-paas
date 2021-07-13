@@ -5,7 +5,7 @@ import { Router } from '@reach/router';
 import styled from 'styled-components';
 
 // PAGES
-import DashBoardPage from '../pages/dashboard';
+import DashboardPage from '../pages/dashboard';
 import AccountPage from '../pages/account';
 import BillingPage from '../pages/billing';
 
@@ -115,11 +115,11 @@ export default function Nav() {
 
       <ul>
         <Logo />
-        <Router>
-          <PrivateRoute path="/app/profile" component={DashBoardPage} />
-          <PrivateRoute path="/app/profile" component={AccountPage} />
-          <PrivateRoute path="/app/profile" component={BillingPage} />
-          <Login path="/app/login" />
+        <Router basepath="/app">
+          <PrivateRoute path="/dashboard" component={DashboardPage} />
+          <PrivateRoute path="/account" component={AccountPage} />
+          <PrivateRoute path="/billing" component={BillingPage} />
+          <Login path="/login" />
         </Router>
 
         {isLoggedIn() ? (
