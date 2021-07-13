@@ -1,8 +1,22 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import udacity from '../assets/images/udacity.svg';
+import { Link, navigate } from 'gatsby';
+import { Router } from '@reach/router';
 
+import styled from 'styled-components';
+
+// PAGES
+import DashBoardPage from '../pages/dashboard';
+
+// COMPONENTS
+import Status from './Status';
+import PrivateRoute from './PrivateRoute';
+import Login from './Login';
+
+// UTILS
+import { setUser, isLoggedIn } from '../utils/auth';
+
+// DESIGN
+import udacity from '../assets/images/udacity.svg';
 import Logo from './Logo';
 
 const NavStyles = styled.nav`
@@ -73,6 +87,22 @@ const NavStyles = styled.nav`
   }
 `;
 
+function MainNav() {
+  return (
+    <>
+      <li>
+        <Link to="/dashboard">Dashboard</Link>
+      </li>
+      <li>
+        <Link to="/account">Account</Link>
+      </li>
+      <li>
+        <Link to="/billing">Billing</Link>
+      </li>
+    </>
+  );
+}
+
 export default function Nav() {
   return (
     <NavStyles>
@@ -80,20 +110,29 @@ export default function Nav() {
         <img alt="scholarship-logo" src={udacity} />
         <span>Udacity · SUSE Cloud-Native Foundation Scholarship</span>
       </div>
+
       <ul>
         <Logo />
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/account">Account</Link>
-        </li>
-        <li>
-          <Link to="/billing">Billing</Link>
-        </li>
-        <li>
-          <Link to="/">Logout</Link>
-        </li>
+        <Status />
+        <Router>
+          <PrivateRoute path="/app/profile" component={DashBoardPage} />
+          <Login path="/app/login" />
+        </Router>
+
+        {isLoggedIn() ? (
+          <>
+            <Link
+              href="/"
+              onClick={(event) => {
+                event.preventDefault();
+                logout(() => navigate(`/app/login`));
+              }}
+            >
+              Logout
+            </Link>
+            <MainNav />
+          </>
+        ) : null}
       </ul>
     </NavStyles>
   );
