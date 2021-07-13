@@ -1,8 +1,12 @@
 import React from 'react';
+
+// ROUTING
 import { navigate } from 'gatsby';
+
+// AUTH
 import { isLoggedIn } from '../utils/auth';
 
-const PrivateRoute = ({ component: Component, location, ...rest }) => {
+export default PrivateRoute({ component: Component, location, ...rest }) {
   if (!isLoggedIn() && location.pathname !== `/app/login`) {
     navigate('/app/login');
     return null;
@@ -10,5 +14,3 @@ const PrivateRoute = ({ component: Component, location, ...rest }) => {
 
   return <Component {...rest} />;
 };
-
-export default PrivateRoute;
