@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
+
 import styled from 'styled-components';
 
+// ROUTING
+import { Link } from 'gatsby';
+
+// ICONS
 import { FiHexagon } from 'react-icons/fi';
 
 const InstanceStyles = styled.li`
