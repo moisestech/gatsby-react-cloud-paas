@@ -115,12 +115,6 @@ export default function Nav() {
 
       <ul>
         <Logo />
-        <Router basepath="/app">
-          <PrivateRoute path="/dashboard" component={DashboardPage} />
-          <PrivateRoute path="/account" component={AccountPage} />
-          <PrivateRoute path="/billing" component={BillingPage} />
-          <Login path="/login" />
-        </Router>
 
         {isLoggedIn() ? (
           <>
