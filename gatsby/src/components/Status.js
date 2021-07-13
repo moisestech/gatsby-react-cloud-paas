@@ -9,6 +9,34 @@ import { Link, navigate } from '@reach/router';
 import firebase from 'gatsby-plugin-firebase';
 import { getUser, isLoggedIn, logout } from '../utils/auth';
 
+const StatusStyles = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  .status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  .account-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  p {
+    margin: 0;
+    &:nth-child(2) {
+      font-size: 1rem;
+    }
+  }
+`;
+
 export default function Status() {
   let details;
 
@@ -22,11 +50,9 @@ export default function Status() {
     );
   } else {
     const { displayName, email } = getUser();
+
     details = (
-      <div>
-        <p>
-          Logged in as {displayName} ({email})!
-        </p>
+      <div className="status">
         <a
           href="/"
           onClick={(event) => {
@@ -36,9 +62,13 @@ export default function Status() {
         >
           <p>Log out</p>
         </a>
+        <span className="account-info">
+          <p>Logged in as {displayName}</p>
+          <p>({email})</p>
+        </span>
       </div>
     );
   }
 
-  return <div>{details}</div>;
+  return <StatusStyles>{details}</StatusStyles>;
 }
