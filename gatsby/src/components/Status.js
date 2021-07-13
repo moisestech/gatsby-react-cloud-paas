@@ -19,10 +19,10 @@ export default function Status() {
   } else {
     const { displayName, email } = getUser();
     details = (
-      <p>
-        Logged in as {displayName} ({email}
-        )!
-        {` `}
+      <div>
+        <p>
+          Logged in as {displayName} ({email})!
+        </p>
         <a
           href="/"
           onClick={(event) => {
@@ -30,9 +30,9 @@ export default function Status() {
             logout(firebase).then(() => navigate(`/app/login`));
           }}
         >
-          <u>Log out</u>
+          <p>Log out</p>
         </a>
-      </p>
+      </div>
     );
   }
 
