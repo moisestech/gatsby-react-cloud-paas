@@ -1,4 +1,6 @@
 import React from 'react';
+
+// ROUTING
 import { Link, navigate } from '@reach/router';
 
 // AUTH
