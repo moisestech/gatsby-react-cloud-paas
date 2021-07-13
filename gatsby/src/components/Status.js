@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styled from 'styled-components';
+
 // ROUTING
 import { Link, navigate } from '@reach/router';
 
