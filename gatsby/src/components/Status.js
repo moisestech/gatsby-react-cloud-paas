@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, navigate } from '@reach/router';
+
+// AUTH
 import firebase from 'gatsby-plugin-firebase';
 import { getUser, isLoggedIn, logout } from '../utils/auth';
 
@@ -8,7 +10,7 @@ export default function Status() {
 
   if (!isLoggedIn()) {
     details = (
-      <p className="text-right px-5">
+      <p>
         <Link to="/app/login">
           <u>Log in</u>
         </Link>
@@ -17,7 +19,7 @@ export default function Status() {
   } else {
     const { displayName, email } = getUser();
     details = (
-      <p className="text-right px-5">
+      <p>
         Logged in as {displayName} ({email}
         )!
         {` `}
@@ -28,7 +30,7 @@ export default function Status() {
             logout(firebase).then(() => navigate(`/app/login`));
           }}
         >
-          <u>log out</u>
+          <u>Log out</u>
         </a>
       </p>
     );
