@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import InstanceList from '../components/InstanceList';
 import TopNav from '../components/TopNav';
 
-const DashBoardPageStyles = styled.div`
+const DashboardPageStyles = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -13,11 +13,11 @@ const DashBoardPageStyles = styled.div`
   z-index: 10;
 `;
 
-export default function DashBoardPage() {
+export default function DashboardPage() {
   return (
-    <DashBoardPageStyles>
+    <DashboardPageStyles>
       <TopNav />
       <InstanceList />
-    </DashBoardPageStyles>
+    </DashboardPageStyles>
   );
 }
