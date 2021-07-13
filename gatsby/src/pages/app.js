@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // ROUTING
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Router } from '@reach/router';
 
 // PAGES
@@ -12,7 +13,7 @@ import BillingPage from './billing';
 
 // COMPONENTS
 import PrivateRoute from '../components/PrivateRoute';
-import Login from '../components/Login';
+import LoginPage from './Login';
 
 const AppStyles = styled.div`
   display: flex;
@@ -26,7 +27,7 @@ export default function App() {
         <PrivateRoute path="/dashboard" component={DashboardPage} />
         <PrivateRoute path="/account" component={AccountPage} />
         <PrivateRoute path="/billing" component={BillingPage} />
-        <Login path="/login" />
+        <LoginPage path="/login" />
       </Router>
     </AppStyles>
   );
