@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { getUser } from '../utils/auth';
 
 const AccountPageStyles = styled.div`
   display: flex;
@@ -20,6 +21,11 @@ export default function AccountPage() {
   return (
     <AccountPageStyles>
       <p>Account Page 👤</p>
+      <h1>Your profile</h1>
+      <ul>
+        <li>Name: {getUser().name}</li>
+        <li>E-mail: {getUser().email}</li>
+      </ul>
     </AccountPageStyles>
   );
 }
