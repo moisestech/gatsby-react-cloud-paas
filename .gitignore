@@ -183,3 +183,18 @@ yarn-error.log
 .yarn-integrity
 
 finished-files-before-record/
+
+# Build Files
+public/
+.cache/
+
+# Gatsby context
+.gatsby-context.js
+
+# Bundle stats
+bundle-stats.json
+
+.history
+.env.*
+.env
+!.env.sample
