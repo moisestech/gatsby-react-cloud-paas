@@ -18,13 +18,15 @@ const AccountPageStyles = styled.div`
 `;
 
 export default function AccountPage() {
+  const { displayName, email } = getUser();
+
   return (
     <AccountPageStyles>
       <p>Account Page 👤</p>
       <h1>Your profile</h1>
       <ul>
-        <li>Name: {getUser().name}</li>
-        <li>E-mail: {getUser().email}</li>
+        <li>Name: {displayName}</li>
+        <li>E-mail: {email}</li>
       </ul>
     </AccountPageStyles>
   );
