@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // COMPONENTS
 import InstanceList from '../components/InstanceList';
-import TopNav from '../components/TopNav';
+import SecondNav from '../components/SecondNav';
 
 const DashboardPageStyles = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ const DashboardPageStyles = styled.div`
 export default function DashboardPage() {
   return (
     <DashboardPageStyles>
-      <TopNav />
+      <SecondNav />
       <InstanceList />
     </DashboardPageStyles>
   );
