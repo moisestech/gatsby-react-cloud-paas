@@ -5,6 +5,7 @@ import Instance from './Instance';
 const InstanceListStyles = styled.ul`
   width: 100vw;
   padding: 0;
+  margin: 0;
   z-index: 5;
 `;
 
