@@ -9,8 +9,7 @@ import { Link } from 'gatsby';
 import { FiHexagon } from 'react-icons/fi';
 
 const InstanceStyles = styled.li`
-  padding: 10px 0;
-  max-height: 53px;
+  height: 53px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -25,7 +24,6 @@ const InstanceStyles = styled.li`
     flex: 1;
     flex-direction: row;
     max-width: 1200px;
-    background: red;
   }
   a.inst-id-wrapper {
     align-items: center;
@@ -34,13 +32,13 @@ const InstanceStyles = styled.li`
     }
   }
   a {
+    height: 100%;
     display: flex;
     flex: 1;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
     margin: 0 20px;
-    background: yellow;
     &:nth-child(2) {
       flex: unset;
     }
@@ -48,6 +46,8 @@ const InstanceStyles = styled.li`
   a span {
     font-size: 3rem;
     padding: 0 15px 0 0;
+    display: flex;
+    align-items: center;
   }
   a div {
     font-size: 1.5rem;
