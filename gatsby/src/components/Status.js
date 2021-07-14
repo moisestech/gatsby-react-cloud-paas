@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // ROUTING
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Link, navigate } from '@reach/router';
 
 // AUTH
@@ -14,20 +15,31 @@ const StatusStyles = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 100%;
   .status {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    height: 100%;
     p {
       font-size: 1.4rem;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      vertical-align: middle;
+      margin: 0;
+      padding: 0 7px;
     }
   }
   .account-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20px;
+    padding: 0 10px 0 20px;
   }
   p {
     margin: 0;
@@ -60,7 +72,7 @@ export default function Status() {
             logout(firebase).then(() => navigate(`/app/login`));
           }}
         >
-          <p>Log out</p>
+          Log out
         </a>
         <span className="account-info">
           <p>Logged in as {displayName}</p>
