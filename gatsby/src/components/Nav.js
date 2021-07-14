@@ -55,6 +55,10 @@ const NavStyles = styled.nav`
   }
   li {
     position: relative;
+    vertical-align: middle;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
   a {
     font-size: 1.4rem;
