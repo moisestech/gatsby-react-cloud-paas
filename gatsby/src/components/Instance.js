@@ -20,11 +20,18 @@ const InstanceStyles = styled.li`
   &:hover {
     background-color: #fbfbfd;
   }
-  div {
+  div.inst-wrapper {
     display: flex;
     flex: 1;
     flex-direction: row;
     max-width: 1200px;
+    background: red;
+  }
+  a.inst-id-wrapper {
+    align-items: center;
+    div {
+      align-items: flex-start;
+    }
   }
   a {
     display: flex;
@@ -33,6 +40,7 @@ const InstanceStyles = styled.li`
     align-items: center;
     text-decoration: none;
     margin: 0 20px;
+    background: yellow;
     &:nth-child(2) {
       flex: unset;
     }
@@ -44,7 +52,7 @@ const InstanceStyles = styled.li`
   a div {
     font-size: 1.5rem;
   }
-  a.instance-settings {
+  a.inst-settings {
     display: flex;
     flex-direction: flex-end;
     align-items: center;
@@ -55,26 +63,27 @@ const InstanceStyles = styled.li`
     align-items: center;
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   li {
     font-size: 1.4rem;
     list-style: none;
     padding-left: 10px;
-    display: block;
+    display: flex;
   }
 `;
 
 export default function Instance({ index }) {
   return (
     <InstanceStyles>
-      <div>
-        <Link to="/instance">
+      <div className="inst-wrapper">
+        <Link className="inst-id-wrapper" to="/instance">
           <span>
             <FiHexagon color="blue" size={25} />
           </span>
           <div>{`instance-${index}`}</div>
         </Link>
-        <Link className="instance-settings" to="/instance/settings">
+        <Link className="inst-settings" to="/instance/settings">
           <ul>
             <li>Describe</li>
             <li>·</li>
