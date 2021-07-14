@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --blue: blue;
     --pastelblue: #8ECDEA;
+    --darkblue: #00295d;
     --black: #2E2E2E;
     --yellow: #ffc600;
     --white: #fff;
@@ -63,7 +64,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--red) var(--white);
+    scrollbar-color: var(--blue) var(--white);
   }
   body::-webkit-scrollbar-track {
     background: var(--white);
