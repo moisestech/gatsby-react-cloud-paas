@@ -18,6 +18,15 @@ import LoginPage from './login';
 const AppStyles = styled.div`
   display: flex;
   flex: 1;
+  width: calc(100vw - 27px);
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export default function App() {
