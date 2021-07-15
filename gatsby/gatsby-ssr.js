@@ -1,5 +1,10 @@
-import React from 'react';
-import Layout from './src/components/Layout';
+import React from "react";
+import Layout from "./src/components/Layout";
+
+// AUTH
+import "firebase/auth";
+import "firebase/firestore";
+import "firebase/functions";
 
 // https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement
 export function wrapPageElement({ element, props }) {
