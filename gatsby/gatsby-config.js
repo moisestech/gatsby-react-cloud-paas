@@ -1,21 +1,21 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
 export default {
   siteMetadata: {
     title: `Nevalyashka Cloud`,
-    description: 'Platform as a Service',
+    description: "Platform as a Service",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/app/*`] },
     },
     {
-      resolve: 'gatsby-plugin-firebase',
+      resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
           apiKey: process.env.GATSBY_FIREBASE_API_KEY,
