@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // ROUTIN
-import { navigate } from '@reach/router';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { navigate } from "@reach/router";
 
 // AUTH
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import firebase from 'gatsby-plugin-firebase';
-import { setUser, isLoggedIn } from '../utils/auth';
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+import firebase from "gatsby-plugin-firebase";
+import { setUser, isLoggedIn, isBrowser } from "../utils/auth";
 
 const LoginPageStyles = styled.div`
   display: flex;
@@ -42,7 +43,7 @@ export default function LoginPage() {
 
   function getUiConfig(auth) {
     return {
-      signInFlow: 'popup',
+      signInFlow: "popup",
       signInOptions: [
         auth.GoogleAuthProvider.PROVIDER_ID,
         auth.EmailAuthProvider.PROVIDER_ID,
@@ -51,7 +52,7 @@ export default function LoginPage() {
       callbacks: {
         signInSuccessWithAuthResult: (result) => {
           setUser(result.user);
-          navigate('/app/dashboard');
+          navigate("/app/dashboard");
         },
       },
     };
@@ -61,11 +62,13 @@ export default function LoginPage() {
     <LoginPageStyles>
       <div className="panel">
         <h2>Login in to your account</h2>
-        {firebase && (
+        {firebase && isBrowser() ? (
           <StyledFirebaseAuth
             uiConfig={getUiConfig(firebase.auth)}
             firebaseAuth={firebase.auth()}
           />
+        ) : (
+          <div>Window object is not defined</div>
         )}
       </div>
     </LoginPageStyles>
