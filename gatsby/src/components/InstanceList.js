@@ -15,7 +15,7 @@ export default function InstanceList() {
   return (
     <InstanceListStyles>
       {instancesArr.map((inst, index) => (
-        <Instance index={index} />
+        <Instance key={index} index={index} />
       ))}
     </InstanceListStyles>
   );
