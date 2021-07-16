@@ -35,11 +35,17 @@
 ## 🗺 URL Tree
 
 ```bash
-├── /                          #Home
-├── /:dashboard                #Dashboard
-├── /:instances/:instanceID    #Instance:ID
-├── /create                    #Create Instance
-└── /*                         #404
+✅ Public Routes
+├── /                             #Home
+├── /about                        #About
+└── /*                            #404
+
+🔒 Private Routes
+├── /app/:dashboard               #Dashboard
+├── /app/:instances/:instanceID   #Instance:ID
+├── /app/create                   #Create Instance
+├── /app/stop                     #Stop Instance
+└── /app/describe                 #Describe Instance
 ```
 
 ## 🌿 Application Tree
