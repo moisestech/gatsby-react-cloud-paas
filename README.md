@@ -48,7 +48,7 @@
 └── /app/describe                 #Describe Instance
 ```
 
-## 🗺 Request
+## 📡 Backend Request
 
 ```bash
 ✅ Public Routes
@@ -118,12 +118,12 @@
 
 ## 📝 Todos
 
-### Login
+### 🔒 Login
 
-- Create Gatsby Auth Login Page.
-- Setup Firebase Login.
+- [ x ] Gatsby Auth Login Page.
+- [ x ] Firebase Auth Login (GMail, Email).
 
-### App State Management
+### 🚦 App State Management
 
 - Import ReduxJS.
 - Setup Instances Redux Action Creators.
