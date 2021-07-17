@@ -51,17 +51,9 @@
 ## 📡 Backend Request
 
 ```bash
-✅ Public Routes
-├── /                             #Home
-├── /about                        #About
-└── /*                            #404
-
-🔒 Private Routes
-├── /app/:dashboard               #Dashboard
-├── /app/:instances/:instanceID   #Instance:ID
-├── /app/create                   #Create Instance
-├── /app/stop                     #Stop Instance
-└── /app/describe                 #Describe Instance
+├── backend/create                #Create Instance
+├── backend/stop                  #Stop Instance
+└── backend/stop                  #Describe Instance
 ```
 
 ## 🌿 Application Tree
