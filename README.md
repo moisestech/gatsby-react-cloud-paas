@@ -125,23 +125,23 @@
 
 ### 🚦 App State Management
 
-- Import ReduxJS.
-- Setup Instances Redux Action Creators.
-- Setup Loading Bar.
+- [ ] Import ReduxJS.
+- [ ] Setup Instances Redux Action Creators.
+- [ ] Setup Loading Bar.
 
 ### 🎹 Dashboard (Instances)
 
-- Create Dashboard Page Pagination.
-- Create Create Instance Page.
-- Create Instance:InstanceID Page.
+- [ ] Create Dashboard Page Pagination.
+- [ ] Create Create Instance Page.
+- [ ] Create Instance:InstanceID Page.
 
 ### 🏠 Homepage
 
-- Create Home Page Welcome Design.
+- [ ] Create Home Page Welcome Design.
 
 ### 🎨 Design
 
-- Create a Dark Mode / Light Mode Theme.
-- Add Favicon / SVG.
-- Mobile version.
-- Create 404 Page.
+- [ ] Create a Dark Mode / Light Mode Theme.
+- [ ] Add Favicon / SVG.
+- [ ] Mobile version.
+- [ ] Create 404 Page.
