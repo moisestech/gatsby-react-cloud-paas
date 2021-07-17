@@ -129,17 +129,17 @@
 - Setup Instances Redux Action Creators.
 - Setup Loading Bar.
 
-### Dashboard (Instances)
+### 🎹 Dashboard (Instances)
 
 - Create Dashboard Page Pagination.
 - Create Create Instance Page.
 - Create Instance:InstanceID Page.
 
-### Homepage
+### 🏠 Homepage
 
 - Create Home Page Welcome Design.
 
-### Design
+### 🎨 Design
 
 - Create a Dark Mode / Light Mode Theme.
 - Add Favicon / SVG.
