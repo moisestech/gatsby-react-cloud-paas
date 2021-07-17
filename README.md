@@ -48,6 +48,22 @@
 └── /app/describe                 #Describe Instance
 ```
 
+## 🗺 Request
+
+```bash
+✅ Public Routes
+├── /                             #Home
+├── /about                        #About
+└── /*                            #404
+
+🔒 Private Routes
+├── /app/:dashboard               #Dashboard
+├── /app/:instances/:instanceID   #Instance:ID
+├── /app/create                   #Create Instance
+├── /app/stop                     #Stop Instance
+└── /app/describe                 #Describe Instance
+```
+
 ## 🌿 Application Tree
 
 ```bash
